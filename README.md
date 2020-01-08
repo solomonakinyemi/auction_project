@@ -10,10 +10,10 @@ In summary the code takes in an input file with lots of rows of data and prints 
 
 ## Run Container
 
-- Pull down the image from the following using the following: 
+- Pull down the docker image using the following url: 
    - docker pull docker.pkg.github.com/solomonakinyemi/auction_project/auction_pod:0.1
 
-- Once completed, check for the image id using: docker images
+- Check for the image id using: docker images
 
 - Run the container using the following: docker run -d <IMAGE ID>
   
@@ -25,7 +25,7 @@ In summary the code takes in an input file with lots of rows of data and prints 
 
 - (Optional ) Install nose library with pip to run the tests if you so desire: pip install -r requirements.txt
 
-- Go into the source code directory: /auction_project/challenge_src
+- Go into the source code directory within the container: cd /auction_project/challenge_src
 
 - (Optional) Run the tests for the code: nosetests -v test_auction.p
 
